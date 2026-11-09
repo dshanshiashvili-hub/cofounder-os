@@ -37,7 +37,7 @@ your-venture/                 ← one repo per venture: the state
 In Claude Code:
 
 ```
-/plugin marketplace add <your-github-user>/cofounder-os
+/plugin marketplace add dshanshiashvili-hub/cofounder-os
 /plugin install cofounder-os@cofounder-os
 ```
 
@@ -82,3 +82,29 @@ Git history is the record of how the team changed. Keep profiles short: sharpen 
 - Profiles reference skills as `cofounder-os:<skill>` in the `skills:` frontmatter field and also name them in the body. If your Claude Code version doesn't preload them, the agent still loads them by name.
 - Only the Skeptic has a restricted tool list. Tighten others by adding a `tools:` line to their frontmatter.
 - Agent teams (agents talking peer-to-peer) are not used by default. The same profiles work as teammates if you enable that experimental mode for a specific debate.
+
+## Setting up on a new computer
+
+Everything lives on GitHub (repos) and Google Drive (files), so a new laptop needs about 10 minutes:
+
+1. Install the **Claude** desktop app and sign in.
+2. Install Homebrew (https://brew.sh), then in Terminal:
+   ```bash
+   brew install gh git
+   gh auth login          # choose GitHub.com → HTTPS → Yes → log in with browser
+   gh auth setup-git
+   ```
+3. Download both repos:
+   ```bash
+   mkdir -p ~/code && cd ~/code
+   gh repo clone dshanshiashvili-hub/cofounder-os
+   gh repo clone dshanshiashvili-hub/fashion-venture
+   ```
+4. Install the team:
+   ```bash
+   claude plugin marketplace add dshanshiashvili-hub/cofounder-os
+   claude plugin install cofounder-os@cofounder-os
+   ```
+5. In the Claude app: **New session** → choose the folder `~/code/fashion-venture`. The Operator loads automatically; approve the connectors when asked.
+
+Before giving an old computer away: check both repos are pushed (`git status` says "up to date"), then erase it (System Settings → General → Transfer or Reset → Erase All Content and Settings).
