@@ -1,0 +1,13 @@
+{
+  "name": "cofounder-os",
+  "owner": {
+    "name": "Demetre Shanshiashvili"
+  },
+  "plugins": [
+    {
+      "name": "cofounder-os",
+      "source": "./",
+      "description": "AI founding team: Operator + Researcher, Architect, Growth, Skeptic."
+    }
+  ]
+}

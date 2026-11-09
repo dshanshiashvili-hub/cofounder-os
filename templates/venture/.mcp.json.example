@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "linear":     { "type": "http", "url": "https://mcp.linear.app/mcp" },
+    "posthog":    { "type": "http", "url": "https://mcp.posthog.com/mcp" },
+    "context7":   { "type": "http", "url": "https://mcp.context7.com/mcp" },
+    "firecrawl":  { "type": "http", "url": "https://mcp.firecrawl.dev/v2/mcp-search" },
+    "similarweb": { "type": "http", "url": "https://mcp.similarweb.com" },
+    "stripe":     { "type": "http", "url": "https://mcp.stripe.com" },
+    "supabase":   { "type": "http", "url": "https://mcp.supabase.com/mcp" },
+    "shopify":    { "type": "http", "url": "https://setup.shopify.com/mcp" },
+    "canva":      { "type": "http", "url": "https://mcp.canva.com/mcp" }
+  }
+}

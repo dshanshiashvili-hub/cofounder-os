@@ -1,0 +1,10 @@
+{
+  "name": "cofounder-os",
+  "version": "0.1.0",
+  "description": "A venture-agnostic AI founding team: an Operator (lead cofounder) running build-measure-learn, plus Researcher, Architect, Growth and Skeptic specialists, with ledgers and a reviewed learning loop.",
+  "author": {
+    "name": "Demetre Shanshiashvili"
+  },
+  "license": "MIT",
+  "keywords": ["startup", "lean", "cofounder", "experiments", "agents"]
+}
